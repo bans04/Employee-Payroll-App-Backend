@@ -1,6 +1,8 @@
 package com.bridgelabz.employeepayrollapp.model;
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDto;
+import lombok.Data;
 
+@Data
 public class Employee {
     private int employeeId;
     private String name;
