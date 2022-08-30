@@ -2,8 +2,13 @@ package com.bridgelabz.employeepayrollapp.dto;
 
 public class EmployeePayrollDto {
     //Employee Payroll DTO fields
-    private String name;
-    private long salary;
+    public String name;
+    public long salary;
+
+    public EmployeePayrollDto(String name, long salary) {
+        this.name = name;
+        this.salary = salary;
+    }
 
     //Generate toString method
     @Override
