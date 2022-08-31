@@ -22,7 +22,7 @@ public class EmployeePayrollAppController {
     //for creating employee data
     @PostMapping("/create")
     public ResponseEntity<ResponceDto> addEmployeePayrollData(@RequestBody EmployeePayrollDto employeePayrollDTO){
-        log.info("Inside addEmployeePayrollData");
+        log.debug("Employee DTO: " + employeePayrollDTO.toString());
         Employee employee = null;
         employee = employeePayrollService.createEmployeeDetails(employeePayrollDTO);
         ResponceDto responceDto = new ResponceDto("Employee payroll data created successfully", employee);

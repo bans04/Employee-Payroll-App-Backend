@@ -65,6 +65,7 @@ public class EmployeePayrollServiceImp implements EmployeePayrollService {
         Employee employee = getEmployeeDetailsById(employeeId);
         employee.setName(employeePayrollDto.name);
         employee.setSalary(employeePayrollDto.salary);
+        log.debug("Employee Data: " + employee.toString());
         return employeePayrollRepository.save(employee);
     }
 
