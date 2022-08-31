@@ -1,7 +1,6 @@
 package com.bridgelabz.employeepayrollapp.model;
 import com.bridgelabz.employeepayrollapp.dto.EmployeePayrollDto;
 import lombok.Data;
-
 import javax.persistence.*;
 
 @Data
