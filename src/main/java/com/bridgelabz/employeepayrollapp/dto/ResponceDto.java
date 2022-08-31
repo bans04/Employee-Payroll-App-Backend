@@ -6,6 +6,11 @@ public class ResponceDto {
     private String message;
     private  Object data;
 
+    /**
+     * Parameterise constructre
+     * @param message
+     * @param data
+     */
     public ResponceDto(String message, Object data) {
         this.message = message;
         this.data = data;
